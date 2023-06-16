@@ -1,0 +1,14 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:up": "docker compose up",
+    "docker:down": "docker compose down --remove-orphans",
+    "docker:psql": "docker exec -it db psql -U postgres postgres",
+    "docker:init": "docker exec -it db chmod +x /docker-entrypoint-initdb.d/init-user-db.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
